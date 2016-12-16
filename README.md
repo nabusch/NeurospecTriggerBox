@@ -5,12 +5,15 @@ These MATLAB functions are used to send triggers using the Neurospec Trigger Box
 The workflow is as follows:
 
 1. port_handle = open_ns_port(port_nb)
+
 Do this once when the experiment starts. This opens the serial COM port.
 
 2. send_ns_trigger(trigger_val, port_handle)
+
 Sends a trigger via the USB port.
 
 3. close_ns_port(port_handle)
+
 Don't forget to close the port when the experiment is over.
 
 Details about MATLAB and the serial port: https://de.mathworks.com/help/matlab/matlab_external/getting-started-with-serial-i-o.html
